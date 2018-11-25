@@ -1,0 +1,50 @@
+/* page properties: */
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.headerl img{
+    width: 100%;
+    margin: 0;
+    position: fixed;
+}
+
+.bodyl img{
+    width: 100%;
+    margin: 0;
+}
+
+.headers img{
+    display: none;
+}
+
+.bodys img{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+.headerl img{
+    display: none;
+}
+
+.bodyl img{
+    display: none;
+}    
+
+.headers img{
+    position: fixed;
+    display: inline;
+    width: 100%;
+    margin: 0;
+}
+
+.bodys img{
+    display: inline;
+    width: 100%;
+    margin: 0;
+}
+    
+}
