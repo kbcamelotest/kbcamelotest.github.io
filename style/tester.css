@@ -1,0 +1,31 @@
+@font-face{
+    font-family: "bentonextraBold";
+    src: url(../assets/fonts/BentonSansExtraComp-Bold.otf);
+}
+@font-face{
+    font-family: "chronicleBold";
+    src: url(../assets/fonts/chronicledisplayblack.ttf);
+}
+@font-face{
+    font-family: "chronicleRoman";
+    src: url(../assets/fonts/chronicledisplayroman.ttf);
+}
+@font-face{
+    font-family: "bentonBold";
+    src: url(../assets/fonts/BentonSansComp-Bold.otf);
+}
+@font-face{
+    font-family: "bentonBook";
+    src: url(../assets/fonts/BentonSansComp-Book.otf);
+}
+
+.testContainer{
+    width: 800px;
+    display: flex;
+    background-color: orange;
+}
+
+.endTag{
+    text-align: end;
+    font-family: bentonBook;
+}
