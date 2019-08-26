@@ -1,0 +1,92 @@
+@font-face{
+    font-family: "bentonMedium";
+    src: url(../assets/fonts/BentonSans-Medium.otf);
+}
+@font-face{
+    font-family: "bentonMediumItalic";
+    src: url(../assets/fonts/BentonSans-MediumItalic.otf);
+}
+@font-face{
+    font-family: "bentonRegular";
+    src: url(../assets/fonts/BentonSans-Regular.otf);
+}
+@font-face{
+    font-family: "bentonRegularItalic";
+    src: url(../assets/fonts/BentonSans-RegularItalic.otf);
+}
+body{
+    margin: 0px;
+}
+
+table {
+  border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  font-family: bentonRegular;
+  font-size: 15px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #58397f;
+  color: white;
+}
+i{
+    color: black;
+}
+
+i:hover{
+    color: orange;
+}
+
+#places{
+    height: 400px;
+}
+
+iframe{
+    border: none;
+    height: 300px;
+}
+
+.mainContainer{
+    display: flex;
+        flex-direction: column;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .mainContainer{
+        flex-direction: column;
+    }
+    table{
+        width: 100%;
+    }
+}
+
+.steeleHall{
+    display: none;
+}
+    
+.steeleHall.active{
+    display: block;
+}
+
+.steeleHall2{
+    display: none;
+}
+    
+.steeleHall2.active{
+    display: block;
+}
+
+.veraHouse{
+    display: none;
+}
+.veraHouse.active{
+    display: block;
+}
