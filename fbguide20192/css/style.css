@@ -39,6 +39,8 @@ body{
 .scroll-area {
   max-width: 100vw ;
   height: 100vh;
+-webkit-overflow-scrolling: touch;
+
 
 }
 
@@ -244,14 +246,14 @@ a{
             .label{
                 padding: 40px 0px;
             }
-    .guideName{
-    font-size: 20px;
-    color: white;
-    font-family: bentonLight;
-    color: black;
-    margin: 0px; 
-    padding: 40px 0px 0px 30px;
-}
+        .guideName{
+        font-size: 20px;
+        color: white;
+        font-family: bentonLight;
+        color: black;
+        margin: 0px; 
+        padding: 40px 0px 0px 30px;
+    }
 }
 
         @media only screen and (max-width: 900px) {
@@ -456,151 +458,149 @@ h3{
 
 /* Responsive */
 
-@media only screen and (max-width: 1550px) {
-    .sectionname{
-        display: none;
-    }
-            .pointer img{
-    display: block;
-}
-        .spreadContainer img{
-    height: 400px;
-        padding-bottom: 20px;
-}
-    .spreadContainer img{
-    width:auto;
-}
-    .scrollSpread{
-        overflow-x: hidden;
-        overflow-x: scroll;
-    }
-    .spContainer{
-        padding: 50px 0px;
-    }
-    }
-
-@media only screen and (max-width: 1350px) {
-.domArt{
-    background-image: url("../images/hero/fbguide2019_animated_DeVito_responsive_medium.gif");}
-    .playername{
-        margin: 40px 0px 15px 0px ;
-    }
-    .guidename{
-        padding: 80px 0px 0px 80px;
-        font-size: 30px;
-    }
-    .content{
-        width: 40%;
-    }
-    .abdulImage{
-        width: 60%;
-    }
-    .trishtonImage{
-        width: 60%;
-    }
-    .tommyImage{
-        width: 60%;
-    }
-}
-
-    
-
-@media only screen and (max-width: 900px) {
-.domArt{
-    background-image: url("../images/hero/fbguide2019_animated_DeVito_responsive_small.gif");
-}
-    .spreadContainer img{
-    height: 400px;
-        padding-bottom: 10px;
-}
-    
-    
-.spLabel{
-    font-family: bentonBold;
-    padding: 0px 0px 0px 0px;
-    font-size: 25px;
-}
-
-    .spParagraph{
-    margin: 10px 0px 15px 0px;
-    font-size: 1.2em;
-}
-    
-.heroText{
-    font-family: bentonBold;
-    font-size: 95px;
-    padding: 0px 25px;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 200px;
-    line-height: 95px;
-    color: #39a8df;
-}
-.heroButton{
-    display: none;
-}
-.heroButton:hover{
-    background-color: #ef4435;
-    color: white;
-}
-    .guideName{
-    font-size: 20px;
-    color: white;
-    font-family: bentonLight;
-    color: black;
-    margin: 0px; 
-    padding: 40px 0px 0px 30px;
-}
-    .abdulImage{
-        display: none;
-    }
-    .tommyImage{
-        display: none;
-    }
-    .trishtonImage{
-        display: none;
-    }
-    .content{
-        width: 100%;
-        padding: 0px 40px;
-
-    }
-    h2{
-        font-size: 55px;
-        line-height: 55px;
-    }
-    
-    
-}
-    
-@media only screen and (max-width: 767px) {
-.heroText{
-    font-family: bentonBold;
-    font-size: 45px;
-    padding:10px 30px;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 200px;
-    line-height: 45px;
-    color: #39a8df;
-}
-}
-    
-    @media only screen and (max-height: 568px) {
-        .heroText{
-    font-family: bentonBold;
-    font-size: 36px;
-    padding: 10px 30px;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 150px;
-    line-height: 35px;
-    color: #39a8df;
-}
-        .guidename{
-            font-size: 17px;
+        @media only screen and (max-width: 1550px) {
+            .sectionname{
+                display: none;
+            }
+                    .pointer img{
+            display: block;
         }
-    }
-    
+                .spreadContainer img{
+            height: 400px;
+                padding-bottom: 20px;
+        }
+            .spreadContainer img{
+            width:auto;
+        }
+            .scrollSpread{
+                overflow-x: hidden;
+                overflow-x: scroll;
+            }
+            .spContainer{
+                padding: 50px 0px;
+            }
+            }
+
+        @media only screen and (max-width: 1350px) {
+        .domArt{
+            background-image: url("../images/hero/fbguide2019_animated_DeVito_responsive_medium.gif");}
+            .playername{
+                margin: 40px 0px 15px 0px ;
+            }
+            .guidename{
+                padding: 80px 0px 0px 80px;
+                font-size: 30px;
+            }
+            .content{
+                width: 40%;
+            }
+            .abdulImage{
+                width: 60%;
+            }
+            .trishtonImage{
+                width: 60%;
+            }
+            .tommyImage{
+                width: 60%;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+        .domArt{
+            background-image: url("../images/hero/fbguide2019_animated_DeVito_responsive_small.gif");
+        }
+            .spreadContainer img{
+            height: 400px;
+                padding-bottom: 10px;
+        }
+
+
+        .spLabel{
+            font-family: bentonBold;
+            padding: 0px 0px 0px 0px;
+            font-size: 25px;
+        }
+
+            .spParagraph{
+            margin: 10px 0px 15px 0px;
+            font-size: 1.2em;
+        }
+
+        .heroText{
+            font-family: bentonBold;
+            font-size: 95px;
+            padding: 0px 25px;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 200px;
+            line-height: 95px;
+            color: #39a8df;
+        }
+        .heroButton{
+            display: none;
+        }
+        .heroButton:hover{
+            background-color: #ef4435;
+            color: white;
+        }
+            .guideName{
+            font-size: 20px;
+            color: white;
+            font-family: bentonLight;
+            color: black;
+            margin: 0px; 
+            padding: 40px 0px 0px 30px;
+        }
+            .abdulImage{
+                display: none;
+            }
+            .tommyImage{
+                display: none;
+            }
+            .trishtonImage{
+                display: none;
+            }
+            .content{
+                width: 100%;
+                padding: 0px 40px;
+
+            }
+            h2{
+                font-size: 55px;
+                line-height: 55px;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 767px) {
+        .heroText{
+            font-family: bentonBold;
+            font-size: 45px;
+            padding:10px 30px;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 200px;
+            line-height: 45px;
+            color: #39a8df;
+        }
+        }
+
+            @media only screen and (max-height: 568px) {
+                .heroText{
+            font-family: bentonBold;
+            font-size: 36px;
+            padding: 10px 30px;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 150px;
+            line-height: 35px;
+            color: #39a8df;
+        }
+                .guidename{
+                    font-size: 17px;
+                }
+            }
+
     
     
