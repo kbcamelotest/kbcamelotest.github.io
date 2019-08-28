@@ -44,12 +44,10 @@ body{
 .scroll-container {
   overflow: auto;
   scroll-snap-type: y mandatory;
-    -webkit-overflow-scrolling: touch;
 }
 
 .scroll-area {
   scroll-snap-align: start;
-    -webkit-overflow-scrolling: touch;
 }
 
 .scroll-container,
