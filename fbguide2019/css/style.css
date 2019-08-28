@@ -38,15 +38,18 @@ body{
 .scroll-area {
   max-width: 100vw ;
   height: 100vh;
+
 }
 
 .scroll-container {
   overflow: auto;
   scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .scroll-area {
   scroll-snap-align: start;
+    -webkit-overflow-scrolling: touch;
 }
 
 .scroll-container,
@@ -394,7 +397,7 @@ h3{
 
 @media only screen and (max-width: 1350px) {
 .domArt{
-    background-image: url("../images/domArt/fbguide2019_animated_DeVito_responsive_medium.gif");}
+    background-image: url("../images/hero/fbguide2019_animated_DeVito_responsive_medium.gif");}
     .playername{
         margin: 40px 0px 15px 0px ;
     }
@@ -420,7 +423,7 @@ h3{
 
 @media only screen and (max-width: 900px) {
 .domArt{
-    background-image: url("../images/domArt/fbguide2019_animated_DeVito_responsive_small.gif");
+    background-image: url("../images/hero/fbguide2019_animated_DeVito_responsive_small.gif");
 }
     
     
@@ -468,8 +471,8 @@ h3{
 
     }
     h2{
-        font-size: 75px;
-        line-height: 75px;
+        font-size: 55px;
+        line-height: 55px;
     }
     
     
