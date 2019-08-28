@@ -45,7 +45,6 @@ body{
 .scroll-container {
   overflow: auto;
   scroll-snap-type: y mandatory;
-    -webkit-overflow-scrolling: touch;
 }
 
 .scroll-area {
@@ -55,10 +54,13 @@ body{
 .scroll-container,
 .scroll-area {
   margin: 0 auto;
+
 }
 
 .scroll-area {
   color: white;
+-webkit-overflow-scrolling: touch;
+
 }
 
 .scroll-area:nth-of-type(1) {
