@@ -51,6 +51,7 @@ body{
   scroll-snap-align: start;
 }
 
+
 .scroll-container,
 .scroll-area {
   margin: 0 auto;
@@ -108,6 +109,14 @@ body{
         background: #ffffff;
         height: 100px
 }
+.scroll-touch {
+  -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+}
+
+.scroll-auto {
+  -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+}
+
 .doButton a{
     color: black;
 }
