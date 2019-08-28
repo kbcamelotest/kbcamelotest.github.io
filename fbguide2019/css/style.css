@@ -1,6 +1,7 @@
 /* Base */
 html {
   background: #f2f2f2;
+  scroll-behavior: smooth;
 }
 body{
     margin: 0px;
@@ -44,6 +45,7 @@ body{
 .scroll-container {
   overflow: auto;
   scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .scroll-area {
@@ -101,14 +103,23 @@ body{
         background: #39a8df;
 }
 .scroll-area:nth-of-type(10) {
-        background: #ef4435;
+        background: #f0f0f0;
 }
 .scroll-area:nth-of-type(11) {
         background: #ffffff;
         height: 100px
 }
+.doButton a{
+    color: black;
+}
 a{
     text-decoration: none;
+}
+.doButton a:visited{
+    color: black;
+}
+.doButton a:hover{
+    color: orange;
 }
 
 
@@ -125,6 +136,22 @@ a{
     width: 650px;
     line-height: 135px;
     color: #39a8df;
+}
+.heroButton{
+    margin-left: 81px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: transparent;
+    color: #ef4435;
+    border: 1px solid #ef4435;
+    padding: 20px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: bentonBold;
+}
+.heroButton:hover{
+    background-color: #ef4435;
+    color: white;
 }
 .domArt{
     width: 100%;
@@ -159,6 +186,17 @@ a{
     overflow-x: hidden;
     font-size: 1.25em;
     width: 60%;
+}
+.doButton{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    margin: 50px;
+    z-index: 100;
 }
 
 .kjPhoto{
@@ -209,6 +247,9 @@ a{
 }
 
         @media only screen and (max-width: 900px) {
+            .dobutton{
+                display: none;
+            }
         .scroll-area:nth-of-type(2) {
             display: block;
         }
@@ -303,8 +344,8 @@ a{
 h2{
     font-family: bentonBold;
     color: #39a8df;
-    font-size: 85px;
-    line-height: 85px;
+    font-size: 70px;
+    line-height: 70px;
     text-align: left;
     text-transform: uppercase;
     margin: 0px 0px 0px 0px;
@@ -312,7 +353,7 @@ h2{
 
 h3{
     color: black;
-    font-size: 25px;
+    font-size: 21px;
     margin: 10px 0px 3px 0px;
     padding: 0px;
 }
@@ -370,19 +411,39 @@ h3{
 
 /* Spread */
 .spContainer{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
 }
 .spLabel{
     font-family: bentonBold;
     padding: 10px 0px;
     font-size: 30px;
     margin: 0px;
+    color: #39a8df;
 }
 .spParagraph{
     margin: 0px 0px 15px 0px;
-    font-size: 1.3em;
+    font-size: 18px;
+    color:black;
+}
+.spreadContainer img{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
+.pointer img{
+    height: 40px;
+    display: flex;
+    margin: 0 auto;
+    display: none;
+}
+.pointer{
+    display: flex;
+    margin: 0 auto;
 }
 
 /* Responsive */
@@ -390,6 +451,23 @@ h3{
 @media only screen and (max-width: 1550px) {
     .sectionname{
         display: none;
+    }
+            .pointer img{
+    display: block;
+}
+        .spreadContainer img{
+    height: 400px;
+        padding-bottom: 20px;
+}
+    .spreadContainer img{
+    width:auto;
+}
+    .scrollSpread{
+        overflow-x: hidden;
+        overflow-x: scroll;
+    }
+    .spContainer{
+        padding: 50px 0px;
     }
     }
 
@@ -423,6 +501,10 @@ h3{
 .domArt{
     background-image: url("../images/hero/fbguide2019_animated_DeVito_responsive_small.gif");
 }
+    .spreadContainer img{
+    height: 400px;
+        padding-bottom: 10px;
+}
     
     
 .spLabel{
@@ -445,6 +527,13 @@ h3{
     width: 200px;
     line-height: 95px;
     color: #39a8df;
+}
+.heroButton{
+    display: none;
+}
+.heroButton:hover{
+    background-color: #ef4435;
+    color: white;
 }
     .guideName{
     font-size: 20px;
