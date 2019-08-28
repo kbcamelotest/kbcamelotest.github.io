@@ -1,0 +1,508 @@
+/* Base */
+html {
+  background: #f2f2f2;
+}
+body{
+    margin: 0px;
+    font-family: bentonLight;
+    overflow-x: hidden;
+}
+
+@font-face{
+    font-family: "bentonItalic";
+    src: url(../assets/fonts/BentonSans-BookItalic.otf);
+}
+
+@font-face{
+    font-family: "bentonBold";
+    src: url(../assets/fonts/BentonSans-Bold.otf);
+}
+@font-face{
+    font-family: "bentonLight";
+    src: url(../assets/fonts/BentonSans-Light.otf);
+}
+
+.bold{
+    font-family: bentonBold;
+}
+.ebold{
+    font-family: bentonItalic;
+}
+.red{
+    color:#ef4435;
+}
+
+/* Page Scroll */
+
+.scroll-container,
+.scroll-area {
+  max-width: 100vw ;
+  height: 100vh;
+}
+
+.scroll-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+  scroll-snap-align: start;
+}
+
+.scroll-container,
+.scroll-area {
+  margin: 0 auto;
+}
+
+.scroll-area {
+  color: white;
+}
+
+.scroll-area:nth-of-type(1) {
+    background: #dddff4;
+}
+
+.scroll-area:nth-of-type(2) {
+    background: #39a8df;
+}
+
+.scroll-area:nth-of-type(3) {
+    background: #ffffff;
+    
+}
+
+.scroll-area:nth-of-type(4) {
+    background: url(../images/Trishton/fbguide_Trishton_Small.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: none;
+}
+
+.scroll-area:nth-of-type(5) {
+    background: #39a8df;
+}
+.scroll-area:nth-of-type(6) {
+            background: url(../images/DeVito/fbguide_Devito_Small.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: none;
+}
+.scroll-area:nth-of-type(7) {
+        background: #39a8df;
+}
+.scroll-area:nth-of-type(8) {
+    background: url(../images/abdul/fbguide_Adams_Small.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: none;
+}
+.scroll-area:nth-of-type(9) {
+        background: #39a8df;
+}
+.scroll-area:nth-of-type(10) {
+        background: #ef4435;
+}
+.scroll-area:nth-of-type(11) {
+        background: #ffffff;
+        height: 100px
+}
+a{
+    text-decoration: none;
+}
+
+
+/* SECTION START */ 
+
+/* Hero */
+
+.heroText{
+    font-family: bentonBold;
+    font-size: 130px;
+    padding-left: 72px;
+    padding-top: 10px;
+    margin: 0px;
+    width: 650px;
+    line-height: 135px;
+    color: #39a8df;
+}
+.domArt{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/hero/fbguide2019_animated_DeVito.gif");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.domText{
+    width: 30%;
+    background-color:#e8eaf6;
+    position: absolute;
+}
+.guideName{
+    font-size: 30px;
+    color: white;
+    font-family: bentonLight;
+    color: black;
+    margin: 0px; 
+    padding: 80px 0px 0px 80px;
+}
+
+/* Letter from the Editor */
+
+    .letterWrapper{
+    color: black;
+    padding: 0px 40px 0px 50px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 1.25em;
+    width: 60%;
+}
+
+.kjPhoto{
+    display: block;
+    background: url(../images/letterEditor/fbguide2019_kyleEdelman_large.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 40%;
+}
+.mobilepad{
+    display: none;
+}
+.letterIntro{
+    font-size: 3em;
+    padding: 50px 0px 10px 0px;
+}
+
+.letter img{
+    width: 100px;
+    margin-bottom: 5px;
+}
+    /* LFED RESPONSIVE */
+        .scroll-area:nth-of-type(2) {
+            display: none;
+            background: url("../images/letterEditor/fbguide2019_kyleEdelman.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+        @media only screen and (max-width: 1250px) {
+            .letterIntro{
+            font-size: 1.6em;
+            padding: 0px;
+            }
+        .mobilepad{
+        display: block;
+        }
+            .label{
+                padding: 40px 0px;
+            }
+    .guideName{
+    font-size: 20px;
+    color: white;
+    font-family: bentonLight;
+    color: black;
+    margin: 0px; 
+    padding: 40px 0px 0px 30px;
+}
+}
+
+        @media only screen and (max-width: 900px) {
+        .scroll-area:nth-of-type(2) {
+            display: block;
+        }
+        .scroll-area:nth-of-type(4) {
+            display: block;
+            }
+            .kjPhoto{
+                display: none;
+            }
+            .letterWrapper{
+                width: 100vw;
+                height: 100vh;
+                font-size: 1.4em;
+            }
+           .letterIntro{
+            display: none;
+            }
+            .scroll-area:nth-of-type(6) {
+                display:  block;
+            }
+            .scroll-area:nth-of-type(8) {
+                display: block;
+            }
+        .label{
+            color: #39a8df;
+            font-family: bentonBold;
+            font-size: 50px;
+            text-align: center;
+            padding: 45px 0px;
+        }
+        }
+        @media only screen and (max-width: 767px) {
+        .label{
+            font-size: 30px;
+        }
+        }
+        @media only screen and (max-width: 330px) {
+        .label{
+            font-size: 21px;
+        }
+        }
+
+
+/* Players */
+
+.divide{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.divideflip{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.abdulImage{
+    width: 73%;
+    height: 100vh;
+    background-image: url("../images/abdul/fbguide_Adams.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.tommyImage{
+    width: 73%;
+    height: 100vh;
+    background-image: url("../images/DeVito/fbguide_Devito.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.trishtonImage{
+    width: 73%;
+    height: 100vh;
+    background-image: url("../images/Trishton/fbguide_Trishton.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.content{
+    width: 27%;
+    height: 100%;
+    padding: 0px 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h2{
+    font-family: bentonBold;
+    color: #39a8df;
+    font-size: 85px;
+    line-height: 85px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 0px;
+}
+
+h3{
+    color: black;
+    font-size: 25px;
+    margin: 10px 0px 3px 0px;
+    padding: 0px;
+}
+
+.introStory{
+    margin: 15px 0px;
+    color: black;
+    font-size: 18px;
+}
+
+.writer{
+    font-family: bentonBold;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+    color: black;
+}
+.light{
+    font-family: bentonLight;
+}
+
+
+
+/* Player Name Animation */
+
+.playername {
+    font-weight: 100;
+    margin: 50px 0px 15px 0px ;
+    font-size: 1.6em;
+    font-family: bentonBold;
+    color: #ef4435;
+    text-transform: capitalize;
+}
+
+/* Buttons */
+
+.button{
+    background-color: transparent;
+    color: #ef4435;
+    border: 1px solid #ef4435;
+    padding: 15px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: bentonBold;
+}
+
+.button:hover{
+    background-color: #ef4435;
+    color: white;
+}
+/* Podcast */
+.containerPodcast{
+    width: 90%;
+    margin: 0 auto;   
+}
+
+/* Spread */
+.spContainer{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.spLabel{
+    font-family: bentonBold;
+    padding: 10px 0px;
+    font-size: 30px;
+    margin: 0px;
+}
+.spParagraph{
+    margin: 0px 0px 15px 0px;
+    font-size: 1.3em;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1550px) {
+    .sectionname{
+        display: none;
+    }
+    }
+
+@media only screen and (max-width: 1350px) {
+.domArt{
+    background-image: url("../images/domArt/fbguide2019_animated_DeVito_responsive_medium.gif");}
+    .playername{
+        margin: 40px 0px 15px 0px ;
+    }
+    .guidename{
+        padding: 80px 0px 0px 80px;
+        font-size: 30px;
+    }
+    .content{
+        width: 40%;
+    }
+    .abdulImage{
+        width: 60%;
+    }
+    .trishtonImage{
+        width: 60%;
+    }
+    .tommyImage{
+        width: 60%;
+    }
+}
+
+    
+
+@media only screen and (max-width: 900px) {
+.domArt{
+    background-image: url("../images/domArt/fbguide2019_animated_DeVito_responsive_small.gif");
+}
+    
+    
+.spLabel{
+    font-family: bentonBold;
+    padding: 0px 0px 0px 0px;
+    font-size: 25px;
+}
+
+    .spParagraph{
+    margin: 10px 0px 15px 0px;
+    font-size: 1.2em;
+}
+    
+.heroText{
+    font-family: bentonBold;
+    font-size: 95px;
+    padding: 0px 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 200px;
+    line-height: 95px;
+    color: #39a8df;
+}
+    .guideName{
+    font-size: 20px;
+    color: white;
+    font-family: bentonLight;
+    color: black;
+    margin: 0px; 
+    padding: 40px 0px 0px 30px;
+}
+    .abdulImage{
+        display: none;
+    }
+    .tommyImage{
+        display: none;
+    }
+    .trishtonImage{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        padding: 0px 40px;
+
+    }
+    h2{
+        font-size: 75px;
+        line-height: 75px;
+    }
+    
+    
+}
+    
+@media only screen and (max-width: 767px) {
+.heroText{
+    font-family: bentonBold;
+    font-size: 45px;
+    padding:10px 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 200px;
+    line-height: 45px;
+    color: #39a8df;
+}
+}
+    
+    @media only screen and (max-height: 568px) {
+        .heroText{
+    font-family: bentonBold;
+    font-size: 36px;
+    padding: 10px 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 150px;
+    line-height: 35px;
+    color: #39a8df;
+}
+        .guidename{
+            font-size: 17px;
+        }
+    }
+    
+    
+    
