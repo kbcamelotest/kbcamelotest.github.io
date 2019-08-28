@@ -54,16 +54,6 @@ body{
 .scroll-container,
 .scroll-area {
   margin: 0 auto;
-      -webkit-overflow-scrolling: touch;
-
-}
-
-.scroll-touch {
-  -webkit-overflow-scrolling: touch;
-}
-
-.scroll-auto {
-  -webkit-overflow-scrolling: auto; 
 }
 
 .scroll-area {
