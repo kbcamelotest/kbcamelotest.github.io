@@ -1,0 +1,199 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+/* base styles */
+
+@font-face{
+    font-family: "chronicleText";
+    src: url(../assets/fonts/ChronicleTextG1-Roman-Pro.otf);
+}
+
+@font-face{
+    font-family: "chronicleDisplay";
+    src: url(../assets/fonts/chronicledisplayblack.ttf);
+}
+
+/* Text */ 
+@font-face{
+    font-family: "georgia";
+    src: url(../assets/fonts/Georgia.ttf);
+}
+@font-face{
+    font-family: "georgiaItalic";
+    src: url(../assets/fonts/GeorgiaItalic.ttf);
+}
+
+/* Heads */ 
+@font-face{
+    font-family: "bentonSC";
+    src: url(../assets/fonts/BentonSans-BoldSC.otf);
+}
+
+@font-face{
+    font-family: "bentonBlack";
+    src: url(../assets/fonts/BentonSans-BoldSC.otf);
+}
+
+@font-face{
+    font-family: "bentonMediumSC";
+    src: url(../assets/fonts/BentonSans-MediumSC.otf);
+}
+
+
+
+body {
+  padding-top: 56px;
+}
+
+/* full width images */ 
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* nav */
+
+.navbar-brand{
+    font-family: georgia;
+}
+.nav-link{
+    font-family: chronicleText;
+    font-size: 18px;
+}
+.bg-orange{
+    background-color: #ff7b04;
+}
+
+/* buttonStyling */
+
+button{
+    padding: 10px;
+    margin: 0px 5px;
+    font-family: bentonMediumSC;
+    font-size: 17px;
+}
+
+.openStyle {
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #ff7b04;
+    border-color: #ff7b04;
+}
+
+.openStyle:hover{
+    color: #db7b26;
+}
+
+.closedStyle{
+    background-color: #ff7b04;
+    color: white;
+}
+
+.closedStyle:hover{
+    background: linear-gradient(to bottom, #ff7b04 20%, #ff8d26 100%);
+}
+
+/* Letter Box */ 
+.centerbox{
+    text-align: center;   
+}
+
+.letterStart{
+    background-color: white;
+    width: 40%;
+    padding: 25px;
+    margin: 20px auto;
+    position: relative;
+}
+.letterBox{
+    background-color: rgba(255, 255, 255, 0.93);
+    width: 43%;
+    padding: 25px;
+    margin: 0 auto;
+    position: relative;
+}
+.card-title{
+    font-family: chronicleDisplay;
+    font-size: 20px;
+    
+}
+.head1{
+    font-family: chronicleDisplay;
+    font-size: 50px;
+}
+
+.letter{
+    font-family: georgia;
+    text-align: left;
+}
+
+.lettersm{
+    font-family: georgia;
+    text-align: center;
+}
+
+.georgiaItal{
+    font-family: georgiaItalic;
+}
+
+/* Letter from the Editor */
+
+.lfromed{
+    display: none;
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+}
+
+/* Section Heads */
+.py-5{
+    text-align: center;
+}
+h2{
+    font-family: bentonSC;
+    letter-spacing: .15em;
+    text-align: center;
+}
+
+/* Goals */
+
+.lead{
+    font-family: georgiaItalic;
+    font-weight: 100;
+}
+.card-body{
+    text-align: left;
+    border: 0 none;
+}
+
+.card{
+    border: 0 none;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .head1{
+        font-size: 40px;
+    }
+    .letterBox{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .letterBox{
+        width: 80%;
+    }
+.head1{
+    font-size: 32px;
+}
+}
