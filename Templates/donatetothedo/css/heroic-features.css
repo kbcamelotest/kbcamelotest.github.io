@@ -119,7 +119,7 @@ button{
     position: relative;
 }
 .card-title{
-    font-family: chronicleDisplay;
+    font-family: bentonSC;
     font-size: 20px;
     
 }
@@ -163,8 +163,8 @@ h2{
 /* Goals */
 
 .lead{
-    font-family: georgiaItalic;
-    font-weight: 100;
+    font-family: georgia;
+    font-size: 16px;
 }
 .card-body{
     text-align: left;
