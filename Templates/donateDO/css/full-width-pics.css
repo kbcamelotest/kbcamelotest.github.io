@@ -282,6 +282,7 @@ input{
     font-family: bentonMediumSC;
     font-size: 23px;
     line-height: 29px;
+    text-align: center;
 }
 .card-text{
     font-family: benton;
@@ -326,6 +327,7 @@ input{
     font-size: 15px;
     font-family: benton;
     font-style: italic;
+    text-align: center;
 }
 
 .card-text a{
@@ -378,9 +380,6 @@ input{
         line-height: 1.10em;
     }
     
-    .paperContent{
-        text-align: left;
-    }
     .card{
         text-align: center;
     }
