@@ -3,18 +3,17 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Donate to the Daily Orange</title>
+    <title>Donate to the Daily Orange</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/full-width-pics.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/full-width-pics.css" rel="stylesheet">
     <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="script.js"></script> 
 
 </head>
 
@@ -23,28 +22,27 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-orange fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">donate.dailyorange.com</a>
+      <a class="navbar-brand" href="#home">donate.dailyorange.com</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item linkHov">
                 <a class="nav-link" href="#">donate
-                  <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">goals</a>
+            <li class="nav-item linkHov">
+                <a class="nav-link" href="#goals">goals</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">testimonials</a>
+            <li class="nav-item linkHov">
+                <a class="nav-link" href="#testimonials">testimonials</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">accolades</a>
+            <li class="nav-item linkHov">
+                <a class="nav-link" href="#awards">awards</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">return to dailyorange.com</a>
+            <li class="nav-item linkHov">
+                <a class="nav-link" href="http://dailyorange.com">return to dailyorange.com</a>
             </li>
         </ul>
       </div>
@@ -53,26 +51,67 @@
 
     <!-- CTA -->
     
-  <header class="py-5 bg-image-full" style="background-image: url(assets/images/domArt_DO.jpg);">
+  <header id="home" class="py-5 bg-image-full" style="background-image: url(assets/images/domArt_DO.jpg);">
 
         <div class="paperTop">
             <div class="paperContent">
                 <h1 class="mac">OUR NEXT STORY</h1>
                 <p class="miniMac">"We're turning the page toward a steadfast future."</p>
+                <div class="introText">
                     <p class="bodyCopy">The Daily Orange has served the Syracuse community for 116 years. Your donation helps The D.O. keep doing what it does best.</p>
                     <p class="bodyCopy"><span class="orange">Every dollar supports our mission of producing top-notch local journalism and creating opportunities for students.</span></p>
                 
-                <button class="openStyle">learn more
+                <button onclick="showhide()" class="openStyle">letter from the editor
                 </button>
+                <button id="myBtn" class="closedStyle">donate
+                </button>
+                </div>
+                <div id="letterText" class="hidden">
+                    <p class="bodyCopy">For 116 years, The D.O. has covered Syracuse like no other while training generations of journalists, innovators and leaders.</p>
+                    <p class="bodyCopy">As The D.O. moves down the block, to 230 Euclid Ave., one era ends. But another is just beginning. We're launching a rigorous fundraising effort to ensure the future of one of Syracuse's most integral and venerated entities. The D.O. is a nonprofit, independent, student-run paper. We don't receive a cent from Syracuse University. That's by choice; Our editorial independence means that much to us.</p>
+                    <p class="bodyCopy">Like newsrooms around the country, we’ve felt the effects of an industry in peril. Since 2013, our advertising revenue has dropped by 45 percent. The D.O.'s leadership has cut expenses by 35 percent in the past six years, including reducing print frequency to three days a week. We're running out of ways to save money.</p>
+                    <p class="bodyCopy">Even the face of painstaking decisions and cutbacks, we've maintained our status as the best collegiate newspaper in the country. We need your help more than ever.</p>
+                    <p class="bodyCopy">If The D.O. wants to continue producing journalism at an award-winning level, there's little left to cut. If we want to continue to develop the next generation of groundbreaking communicators, we must turn the tide.</p>
+                    <p class="bodyCopy">In our 117th year, help us write our next story.</p>
+
                 <button class="closedStyle">donate
                 </button>
+                </div>
             </div>
+            
+            <!-- MODAL -->
+                
+                <div id="myModal" class="modal">
+
+                  <div class="modal-content">
+                    <div class="modal-body">
+                    <span class="close">&times;</span>
+                    
+                    <h2 class="donationMac">donate to the daily orange</h2>
+                    <p>The Daily Orange has served the Syracuse community for 116 years. Your donation helps The D.O. keep doing what it does best. Every dollar supports our mission of producing top-notch local journalism and creating opportunities for students.</p>
+                    
+                    <form class="verticalFlex">
+                        <label for="fname">Amount</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </form>
+                        
+                    <form class="horizontalFlex">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </form>
+                    </div>
+                  </div>
+
+                </div>
+            
+            <!-- LETTER FROM THE EDITOR -->
+            
         </div>
       
   </header>
 
   <!-- Content section -->
-  <section class="py-5" style="background-image:url(assets/images/Paper.jpg);">
+  <section id="goals" class="py-5">
     <div class="container">
       <h1 class="sectionHead">goals and priorities</h1>
       <p class="lead">Every dollar supports The Daily Orange’s mission for generations to come. Be a part of our next story.</p>
@@ -133,7 +172,7 @@
   </section>
 -->
   <!-- Content section -->
-  <section class="py-5">
+  <section id="testimonials" class="py-5">
     <div class="container">
       <h1 class="sectionHead">alumni testimonials</h1>
       <p class="lead">Hear what our alumni have to say about their time at The Daily Orange.</p>
@@ -181,7 +220,7 @@
     </div>
       
     <!-- AWARD WINNING PUBLICATION --> 
-      <br><br><br>
+      <br><br id="awards"><br>
       <div class="container">
       <h1 class="sectionHead">support our award winning publication</h1>
       <p class="lead">The Daily Orange was just named the Best College Newspaper of 2019 by the Princeton Review. We consistently earn national recognition from the Associated College Press and the Society of Professional Journalists, among other awards. </p>
@@ -194,8 +233,8 @@
         </p>
 
 
-          <img class="card-img-top" src="assets/images/stories/burke.png" alt="">
-            <p class="card-text topper">“It was like my second home, if not my first home, because I feel like sometimes I spent more time here than where I actually lived.”</p>
+            <a href="http://dailyorange.com/2018/04/quiet-leader-syracuse-university-trustee-bain-capital-influenced-campus-wide-change/"><img class="card-img-top" src="assets/images/stories/burke.png" alt=""></a>
+            <p class="card-text topper"><span class="boldText"><a href="http://dailyorange.com/2018/04/quiet-leader-syracuse-university-trustee-bain-capital-influenced-campus-wide-change/">corporate influence series</a></span><br>by Michael Burke</p>
         </div>
       </div>
 
@@ -204,8 +243,8 @@
                       <h4 class="card-title middle award"> sports writing<br> regional winner  </h4>
             <p class="qualifier middle organization">Society of Professional Journalists
         </p>
-          <img class="card-img-top" src="assets/images/stories/robertson.png" alt="">
-<p class="card-text topper">“When you go out into the ‘real’ world, it feels like you have a leg up. You’ve had a headstart from the experiences and the education that you got here at The D.O.””</p>
+            <a href="http://dailyorange.com/2018/08/redemption-alton-robinson-faced-up-to-20-years-in-prison-on-a-robbery-charge/"><img class="card-img-top" src="assets/images/stories/robertson.png" alt=""></a>
+            <p class="card-text topper"><span class="boldText"><a href="http://dailyorange.com/2018/08/redemption-alton-robinson-faced-up-to-20-years-in-prison-on-a-robbery-charge/">redemption</a></span><br>by Matthew Liberman</p>
         </div>
       </div>
 
@@ -214,18 +253,18 @@
             <h4 class="card-title middle award"> breaking news reporting regional winner  </h4>
             <p class="qualifier middle organization">Society of Professional Journalists
         </p>
-          <img class="card-img-top" src="assets/images/stories/thetatau.png" alt="">
-        <p class="card-text topper ">“When I was looking at schools, I came to Syracuse because of The Daily Orange. It’s where I wanted to learn.”</p>
+            <a href="http://dailyorange.com/2018/04/su-suspends-theta-tau-fraternity-video-extremely-racist-behavior-surfaces/"><img class="card-img-top" src="assets/images/stories/thetatau.png" alt=""></a>
+<p class="card-text topper"><span class="boldText"><a href="http://dailyorange.com/2018/04/su-suspends-theta-tau-fraternity-video-extremely-racist-behavior-surfaces/">theta tau</a></span><br>by Catherine Leffert, Jordan Miller, Sam Ogozalek and Kennedy Rose</p>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-            <h4 class="card-title middle award"> college division<br>best print feature story  </h4>
+            <h4 class="card-title middle award"> college division<br>best print feature story </h4>
             <p class="qualifier middle organization">Syracuse Press Club
         </p>
-          <img class="card-img-top" src="assets/images/stories/journey.png" alt="">
-         <p class="card-text topper">“The Daily Orange helped shape my worldview in a way that I don’t think any traditional class could have done.”</p>
+            <a href="http://dailyorange.com/2018/11/journey-home-5-scotsmen-biked-3000-miles-commemorate-victims-pan-flight-103/"><img class="card-img-top" src="assets/images/stories/journey.png" alt=""></a>
+<p class="card-text topper"><span class="boldText"><a href="http://dailyorange.com/2018/11/journey-home-5-scotsmen-biked-3000-miles-commemorate-victims-pan-flight-103/">the journey home</a></span><br>by Ally Moreo and Haley Kim</p>
         </div>
       </div>
 
@@ -236,7 +275,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        <a href="http://dailyorange.com"><p class="m-0 text-center text-white"><img src="assets/images/DOLogo.png" style="width: 20%;"></p></a>
     </div>
     <!-- /.container -->
   </footer>
@@ -244,12 +283,60 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
  <script>
     var iframe = document.querySelector('iframe');
     var player = new Vimeo.Player(iframe);
 
     player.setVolume(0);
   </script>
+    <script>
+     $('a[href^="#"]').on('click', function(event) {
+    var hash = '#' + $(this).attr('href').split('#')[1]
+    var element = $(hash)
+    if (element.length) {
+      event.preventDefault();
+      history.pushState(hash, undefined, hash)
+      $('html, body').animate({scrollTop: element.offset().top-=55}, 500)
+    }
+  });   
+
+  window.addEventListener('popstate', function(e) {
+    if(e.state && e.state.startsWith('#') && $(e.state).length){
+      $('html, body').animate({scrollTop: $(e.state).offset().top}, 500)
+    }
+  });
+
+  $('html, body').on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+    $('html, body').stop();
+  });</script>
+    
+<script>
+    var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
 
 </body>
 

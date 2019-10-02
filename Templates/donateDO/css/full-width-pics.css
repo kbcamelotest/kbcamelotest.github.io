@@ -57,6 +57,8 @@
     src: url(../assets/fonts/BentonSans-MediumSC.otf);
 }
 
+button:focus {outline:0;}
+
 /* -------- BEGIN STYLE -------- */
 
 body {
@@ -84,6 +86,14 @@ body {
     font-family: chronicleText;
 }
 
+.linkHov{
+    color: #ffffff;
+    transition: 3s;
+}
+
+.linkHov:hover{
+    color: blue;
+}
 
 /* Letter from the Editor Styles */
 
@@ -113,6 +123,77 @@ body {
 .orange{
     color: rgb(229, 105, 0);
 }
+
+#letterText{
+    text-align: left;
+}
+
+/* Show/Hide Letter */
+
+#letterText { 
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 750ms; 
+}
+#letterText.active {
+    max-height: 1000px;
+}
+
+/* Donate Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: var(--orange);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff8d26;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {padding: 30px 30px;}
 
 /* Button Styles */
 
@@ -149,6 +230,28 @@ button{
     background-color: rgba(255, 88, 0, 0.86);
     padding: 8px 20px;
     
+}
+
+
+/* Donation Form */
+
+.donationMac{
+    font-family: bentonMediumSC;
+    font-size: 2.5em;
+}
+
+.verticalFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs */
+
+input{
+    font-size: 40px;
+    font-family: benton;
+    height: 100px;
+    color: var(--orange);
 }
 
 /* Goals and Priorities */
@@ -225,6 +328,15 @@ button{
     font-style: italic;
 }
 
+.card-text a{
+    color: #3e3e3e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.card-text a:hover{
+    color: var(--orange);
+}
+
 /* Stories */
 
 .middle{
@@ -241,12 +353,19 @@ button{
     font-size: 15px;
 }
 
+.boldText{
+    font-family: bentonMediumSC;
+}
+
 @media only screen and (max-width: 1300px) {
     .paperTop{
         width: 60%;
     }
     .mac{
         font-size: 2.5em;  
+    }
+    .modal-content{
+        width: 60%;
     }
 }
 
@@ -275,5 +394,11 @@ button{
         font-size: 30px;
         line-height: 33px;
         margin-bottom: 15px;
+    }
+    .donationMac{
+        font-size: 1.6em;
+    }
+    .modal-content{
+        width: 90%;
     }
 }
