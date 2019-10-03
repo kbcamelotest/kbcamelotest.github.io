@@ -128,6 +128,9 @@ body {
     text-align: left;
 }
 
+.qual{
+    font-family: bentonMediumSC;
+}
 /* Show/Hide Letter */
 
 #letterText { 
@@ -165,6 +168,10 @@ body {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s
+}
+
+.submitButton{
+    
 }
 
 /* Add Animation */
@@ -244,14 +251,42 @@ button{
     display: flex;
     flex-direction: column;
 }
+.horizontalFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Inputs */
 
-input{
+.amountInput{
     font-size: 40px;
     font-family: benton;
     height: 100px;
     color: var(--orange);
+}
+.fname{
+    font-family: bentonMediumSC;
+    color: grey;
+    padding-top: 15px;
+}
+.donationAsk{
+    margin-bottom: 5px;
+}
+
+.smallInput{
+    margin-right: 20px;
+    color: var(--orange);
+    font-size: 20px;
+}
+
+.rightMargin{
+    margin-right: 20px;
+}
+
+.submitMargin{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 0px 5px 0px 5px;
 }
 
 /* Goals and Priorities */
@@ -319,6 +354,7 @@ input{
 
 .topper{
     margin-top: 10px;
+    text-align: center;
 }
 
 .qualifier{
@@ -367,7 +403,7 @@ input{
         font-size: 2.5em;  
     }
     .modal-content{
-        width: 60%;
+        width: 75%;
     }
 }
 
